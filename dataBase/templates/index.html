@@ -1,12 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DATA BASE</title>
-</head>
-<body>
-    
-</body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+jvectormap
+{% endblock  %}
+
+{% block content %}
+  <div class="card">
+    <div class="card-body">
+      <h1>map on number of institutions offering degrees on the subject</h1>
+      <div class="card "id="world-map" style="width: 1000px; height: 800px"></div>
+      <a href="{% static 'data.xlsx'%}" download>xlsx</a>
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'main.js'%}"></script>
+{% endblock %}
