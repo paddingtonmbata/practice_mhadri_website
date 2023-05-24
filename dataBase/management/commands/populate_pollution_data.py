@@ -7,9 +7,6 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         countryData = pd.read_csv('static\global air pollution dataset.csv')
-
-# Assuming you have a pandas DataFrame called 'df' with the pollution data
-
         for index, row in countryData.iterrows():
             country = row['Country']
             city = row['City']
