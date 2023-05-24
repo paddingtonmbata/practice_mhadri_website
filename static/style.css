@@ -1,9 +1,13 @@
-/* Center text in jvectormap legend */
+body {
+  width: 100vw;
+  min-height: 100vh;
+}
 .jvectormap-legend {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
